@@ -1,0 +1,100 @@
+/* Fonts: load local Figtree files shipped in assets/fonts/static
+   Colors and typography come from style-guide.md
+*/
+/* ===== Base styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f2b705, #f26b1d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===== Card ===== */
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0px black;
+  width: 350px;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 1.2rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* ===== Content ===== */
+.tag {
+  background: #f5c518;
+  color: black;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: #f26b1d;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* ===== Author Section ===== */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 500px) {
+  body {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+}
